@@ -1,0 +1,4 @@
+[submodule "third_party/nearby"]
+	path = third_party/nearby
+	url = https://github.com/ostrichbat2k/nearby.git
+	branch = release/linux
