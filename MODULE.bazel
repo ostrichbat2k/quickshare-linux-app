@@ -4,12 +4,13 @@ bazel_dep(name = "rules_cc", version = "0.2.17")
 
 http_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-# TODO: switch to the published GitHub Release URL once the v0.1.0 release
-# finishes publishing (https://github.com/ostrichbat2k/nearby/releases/tag/v0.1.0).
+# TODO: switch to the published GitHub Release URL once nearby#22 (adds
+# the protocol-handshake headers) merges and a real v0.1.1 tag is cut
+# (https://github.com/ostrichbat2k/nearby/releases).
 http_archive(
     name = "nearby_linux_platform",
-    url = "file:///home/jayaprakash/claude/quickshare-linux/release/linux/dist/nearby-linux-platform-v0.1.0.tar.gz",
-    sha256 = "bd853290099a71fc2beb64ce4dbef4c09b43fa9f9f82f89eec16866a2b6f9373",
+    url = "file:///home/jayaprakash/claude/quickshare-linux/release/linux/dist/nearby-linux-platform-v0.1.1.tar.gz",
+    sha256 = "da01c3373ecd6cac84a83559a8f971c5cbef1eff7226b5c965fa8ffd12c745ba",
     build_file_content = """
 load("@rules_cc//cc:cc_library.bzl", "cc_library")
 
