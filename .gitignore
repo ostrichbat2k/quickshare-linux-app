@@ -4,3 +4,7 @@ build/
 *.a
 *.so
 compile_commands.json
+bazel-bin
+bazel-out
+bazel-testlogs
+bazel-quickshare-linux-app
